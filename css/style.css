@@ -1,0 +1,217 @@
+@import url(reset.css);
+body {
+  background: gray;
+  height: 100%;
+
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.header__title {
+  margin-bottom: 5px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.header__title h2 {
+  background-color: greenyellow;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.section__image {
+  background: url(../img/fon.webp)0 0/150px 150px  no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  z-index: 1;
+  top: 10px;
+  transform: skew(0deg, 0deg);
+}
+
+.section__img {
+  background: url(../img/vodopad.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 220px;
+  bottom: 140px;
+  transform-origin: 0 0;
+  transform: rotate(0deg);
+}
+.section__picture {
+  background: url(../img/guk_vodospad.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 440px;
+  bottom: 290px;
+}
+
+.section__pic {
+  background: url(../img/vodopad_3.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  left: 660px;
+  bottom: 440px;
+}
+.section__image:hover {
+  transform: skew(8deg, 8deg);
+}
+.section__img:hover{
+  transform: rotate(20deg);
+}
+.section__picture:hover{  
+  transform: translateX(60px);
+}
+.section__pic:hover {
+  transform: translateY(60px);
+}
+
+.page__item-one,
+.page__item-two,
+.page__item-three{
+  background-color: gray;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: dotted 1px #fff;
+  transition: all 0.9s ease 0s;
+}
+.page__item-one p,
+.page__item-two p,
+.page__item-three p {
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.page__item-one {
+  transform: scale3d(1, 1, 1);
+  position: relative;
+  z-index: 3;
+  bottom: 400px;
+  left: 30px;
+}
+.page__item-one:hover {
+  background: url(../img/hycul_dubai.webp)0 0/contain no-repeat;
+  transform: scale3d(2, 2, 2);
+  
+}
+.page__item-two {
+  transform: translate3D(0px, 0px, 0px);
+  position: relative;
+  z-index: 2;
+  bottom: 600px;
+  left: 340px;
+}
+.page__item-two:hover {
+  background: url(../img/dybai_v_ukraine.webp)0 0/200px 200px no-repeat ;
+  transform: translate3D(50px, 50px, 50px);
+}
+.page__item-three{
+  transform: translate3D(0px, 0px, 0px);
+  position: relative;
+  bottom: 800px;
+  left: 640px;
+}
+.page__item-three:hover{
+  transform: scale3d(2, 2, 2);
+  background: url(../img/dubai_ukr_mono.webp)0 0/contain no-repeat;
+}
+.box__pic {
+  background: url(../img/chudovi-kraevydy-tatariv.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 750px;
+  transform: rotateY(0deg);
+}
+.box__pic:hover {
+  transform: rotateY(50deg);
+}
+.box__picture {
+  background: green;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 900px;
+  left: 220px;
+  font-size: 15px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  transition: all 0.9s ease 0s;
+  transform: rotateX(0deg);
+}
+.box__picture:hover {
+  transform: rotateX(50deg);
+}
+.box__img{
+  background: url(../img/photo-synevir.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 1050px;
+  left: 450px;
+  perspective: 400px;
+}
+.box__img:hover {
+  transform: rotate3d(1, 2, 1, 35deg);
+}
+.box__image {
+  background: url(../img/svitanok_tuman.webp)0 0/150px 150px no-repeat;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  bottom: 1200px;
+  left: 700px;
+  perspective: 400px;
+}
+.box__image:hover{
+  transform-origin:bottom right ;
+  transform: rotate(45deg);
+  transition: all 0.9s ease 0s;
+}
+div.body {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  transition: all 1.9s ease 0s;
+  transform-style: preserve-3d;
+  left: 350px;
+  bottom: 1150px;
+}
+.body__front,
+.body__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.body__front{
+  z-index: 22;
+  transform: rotateY(0deg);
+  background-color: #77608d;
+  background: url(../img/karpaty-zyma.webp)0 0 /250px 250px no-repeat;
+  backface-visibility: hidden;
+}
+.body__back{
+  transform: rotateY(-180deg);
+  background: url(../img/look.com.ua-139403.webp)0 0 /250px 250px no-repeat;
+}
+.body:hover {
+  transform: rotateY(-180deg);
+}
